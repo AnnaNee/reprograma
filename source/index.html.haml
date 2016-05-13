@@ -1,5 +1,5 @@
-%nav.navbar.navbar-reprograma
-  .container-fluid
+%nav.navbar.navbar-reprograma.navbar-fixed-top
+  .container
     .navbar-header
       %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
@@ -7,11 +7,14 @@
         %span.icon-bar
         %span.icon-bar
       %a.navbar-brand.reprograma-logo{:href => "/"}
-        %span.purple {re
-        %span.white.bold programa
-        %span.purple }
+        %span.purple
+          {re
+        %span.white
+          programa
+        %span.purple
+          }
 
-    .collapse.navbar-collapse
+    .collapse.navbar-collapse.uppercase
       %ul.nav.navbar-nav.navbar-right
         %li
           %a{:href => "#"} Reprograma
@@ -26,3 +29,13 @@
         %li
           %a{:href => "#"}
             %button.btn.btn-md.btn-primary.uppercase Quero Apoiar
+
+.container-fluid.background-header
+  .row.text-center
+    %a.navbar-brand.reprograma-logo.lg{:href => "/"}
+      %span.purple
+        {re
+      %span.white
+        programa
+      %span.purple
+        }

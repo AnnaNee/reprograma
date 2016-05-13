@@ -4,6 +4,9 @@
 @import "bootstrap"
 @import url(https://fonts.googleapis.com/css?family=Lato)
 
+// Views
+@import "partials/navbar.css.sass"
+
 // Style-guide Variables
 $primary-color: #7F479B
 
@@ -27,12 +30,9 @@ $primary-color: #7F479B
     color: $primary-color
   .white
     color: #FFF
-  .bold
-    font-weight: 600
+  &.lg
+    font-size: 8rem
 
 // Helpers
 .uppercase
   text-transform: uppercase
-
-// Views
-@import "partials/navbar.css.sass"
