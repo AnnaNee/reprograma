@@ -9,11 +9,24 @@
 
 // Style-guide Variables
 $primary-color: #7F479B
+$main-font: 'Lato', sans-serif
+$title-color: #464646
+$main-text-color: #818181
+
+// General rules
+body
+  font-family: $main-font
+
+section
+  padding: 3rem 0
 
 // Style-guide Patterns
 .btn
   border: 0
-  font-family: 'Lato', sans-serif
+  font-family: $main-font
+  @include transition(all 0.3s ease-in-out)
+  &:hover
+    @include transition(all 0.3s ease-in-out)
 
 .btn-primary
   background-color: $primary-color
@@ -24,6 +37,17 @@ $primary-color: #7F479B
   &:hover
     background-color: lighten($primary-color, 20%)
 
+.btn-outline
+  border: 1px solid #FFF
+  color: #FFF
+  &:hover
+    border-color: #AF82C6
+    color: #AF82C6
+
+.btn-inverse
+  background-color: #FFF
+  color: $primary-color
+
 .reprograma-logo
   font-size: 2.4rem
   .purple
@@ -33,6 +57,114 @@ $primary-color: #7F479B
   &.lg
     font-size: 8rem
 
+.section-title
+  font-weight: bold
+  color: $title-color
+  &:after
+    color: $primary-color
+    content: "}"
+    display: table
+    font-size: 3.6rem
+    font-weight: lighter
+    margin: 0 auto
+    transform: rotate(90deg)
+
 // Helpers
 .uppercase
   text-transform: uppercase
+
+// Section About
+.about
+  color: $main-text-color
+
+  .description
+    line-height: 2.4rem
+    font-size: 1.6rem
+
+// Section Call To Action
+.call-to-action
+  color: #FFF
+
+  .box
+    background-color: #7A4395
+    background: linear-gradient(to right, #9351b4 0%, #7a4395 100%)
+    padding: 5rem
+    height: 16rem
+    display: table
+    p
+      display: table-cell
+      vertical-align: middle
+
+// Section About Course
+.about-course
+  background-color: #2B2B2B
+  color: #FFF
+
+  .section-title
+    color: #FFF
+
+  .goals
+    margin-top: 3rem
+    .goal
+      font-size: 1.6rem
+      padding: 0 10rem
+      height: 16rem
+      &:before
+        color: $primary-color
+        content: "{"
+        font-size: 18rem
+        font-weight: lighter
+        left: 6rem
+        position: absolute
+        top: -6rem
+      &:after
+        color: $primary-color
+        content: "}"
+        font-size: 18rem
+        font-weight: lighter
+        right: 6rem
+        position: absolute
+        top: -6rem
+
+// Team
+.team
+  background-color: #ECDDF3
+
+  .thumbnail
+    background-color: transparent
+    border: 0 none
+    color: #000
+    figcaption
+      margin-top: 1rem
+
+// Partners
+.partners
+  .logos
+    margin-bottom: 3rem
+  .partner
+    margin-right: 2rem
+    &:last-child
+      margin-right: 0
+
+// Support Us
+.support
+  background-color: $primary-color
+  color: #FFF
+  font-size: 1.6rem
+  .btn-inverse
+    margin-left: 1rem
+
+.sub-support
+  background-color: darken($primary-color, 10%)
+  color: lighten($primary-color, 30%)
+  font-size: 1.8rem
+  font-style: italic
+
+// Footer
+.footer
+  background-color: #111111
+  color: #FFF
+  .glyphicon-evelope
+    font-size: 4rem
+    color: $primary-color
+    vertical-align: middle
