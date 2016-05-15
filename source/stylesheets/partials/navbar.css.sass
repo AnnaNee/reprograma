@@ -1,5 +1,6 @@
 // Bootstrap overrides
 .navbar-reprograma
+  @include transition(all 0.3s ease-in-out)
   li
     margin-top: .5rem
     &:last-child
@@ -13,13 +14,29 @@
         background-color: transparent
         color: darken(#FFF, 10%)
 
-.main-header
+  .navbar-toggle
+    border-color: #FFF
+    .icon-bar
+      background-color: #FFF
+
+  &.navbar-scrolled
+    background-color: #FFF
+    @include transition(all 0.3s ease-in-out)
+    li a
+      color: $primary-color
+
+    .reprograma-logo
+      .light-purple
+        color: lighten($primary-color, 30%)
+
+.main-header,
 .background-header
   background-image: url(../images/header/bg.png)
   background-repeat: no-repeat
   height: 100vh
   background-size: cover
   padding-top: 5rem
+  background-attachment: fixed
 
   .header-container
     margin-top: 11rem
@@ -37,3 +54,8 @@
     width: 100%
     display: inline-table
     padding: 6rem 0
+
+@media (max-width: $screen-xs-max)
+  .navbar-reprograma
+    .navbar-collapse
+      background-color: $primary-color

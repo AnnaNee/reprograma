@@ -5,7 +5,10 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}/
 
-    %title= current_page.data.title || "Middleman"
+    %script{src: "vendor/javascripts/jquery-1.12.3.js"}
+    %script{src: "vendor/javascripts/bootstrap.js"}
+
+    %title= current_page.data.title || "Reprograma - Aprenda a construir a web"
     %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
     = stylesheet_link_tag :site
     = javascript_include_tag :all

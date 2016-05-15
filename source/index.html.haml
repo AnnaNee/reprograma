@@ -1,7 +1,7 @@
-%nav.navbar.navbar-reprograma.navbar-fixed-top
+%nav#navbarScroll.navbar.navbar-reprograma.navbar-fixed-top
   .container
     .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#navbar-collapsed", "data-toggle" => "collapse", :type => "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
@@ -14,23 +14,23 @@
         %span.purple
           }
 
-    .collapse.navbar-collapse.uppercase
+    #navbar-collapsed.collapse.navbar-collapse.uppercase
       %ul.nav.navbar-nav.navbar-right
         %li
-          %a{:href => "#"} Reprograma
+          %a{:href => "#about"} Reprograma
         %li
-          %a{:href => "#"} Curso
+          %a{:href => "#aboutCourse"} Curso
         %li
-          %a{:href => "#"} Inscrições
+          %a{:href => "#subscriptions"} Inscrições
         %li
-          %a{:href => "#"} Equipe
+          %a{:href => "#team"} Equipe
         %li
-          %a{:href => "#"} Parceiros
+          %a{:href => "#partners"} Parceiros
         %li
-          %a{:href => "#"}
+          %a{:href => "#support"}
             %button.btn.btn-md.btn-primary.uppercase Quero Apoiar
 
-%section.container-fluid.background-header.main-header
+%section.container-fluid.background-header.main-header.parallax
   .row.text-center
     .col-md-6.col-md-offset-3
       .header-container
@@ -53,7 +53,7 @@
 
         %a.btn.btn-lg.btn-outline.uppercase{href: "#"} Cadastre-se para as próxmas edições
 
-%section.container.about
+%section#about.container.about
   .row.text-center
     .col-md-8.col-md-offset-2
       %h3.section-title.uppercase O que é o reprograma?
@@ -62,7 +62,7 @@
         %br
         Ao final do programa, elas possam contribuir da melhor maneira para o setor tecnológico brasileiro, conquistando assim maiores possibilidades para acessar oportunidades profissionais nesse setor.
 
-.container-fluid.call-to-action
+#callToAction.container-fluid.call-to-action
   .row.text-center
     .col-md-3.box
       %p.uppercase Um crescimento rápido e elevado da área de TI
@@ -73,7 +73,7 @@
     .col-md-3.box
       %p.uppercase As soluçoes desenvolvidas não dão conta da diversidade local
 
-%section.container-fluid.about-course
+%section#aboutCourse.container-fluid.about-course
   .row.text-center
     .col-md-12
       %h3.section-title.uppercase O curso
@@ -90,7 +90,7 @@
       = image_tag "icons/goal3.png"
       %p Mentoria liderada por profissionais referência na indústria
 
-%section.container.subscriptions
+%section#subscriptions.container.subscriptions
   .row.text-center
     .col-md-12
       %h3.section-title.uppercase Inscrições
@@ -98,7 +98,7 @@
       %p cadastre-se e não perca as próximas edições!
       %a.btn.btn-lg.btn-primary{href: "#"} Cadastrar
 
-%section.container-fluid.team
+%section#team.container-fluid.team
   .row.text-center
     .col-md-12
       %h3.section-title.uppercase Equipe Reprograma
@@ -201,7 +201,7 @@
             %br
             Developer
 
-%section.container.partners
+%section#partners.container.partners
   .row.text-center
     .col-md-12
       %h3.section-title.uppercase Conheça nossos parceiros
@@ -221,7 +221,7 @@
     .col-md-12
       %a.btn.btn-md.btn-primary.uppercase{href: "#", title: "Seja nosso parceiro"} Seja nosso parceiro
 
-%section.container-fluid.support
+%section#support.container-fluid.support
   .row.text-center
     .col-md-12
       %strong Apoie o projeto e ajude o desenvolvimento profissional de mulheres
