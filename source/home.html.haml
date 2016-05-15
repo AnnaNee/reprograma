@@ -1,0 +1,249 @@
+%nav#navbarScroll.navbar.navbar-reprograma.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#navbar-collapsed", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand.reprograma-logo{:href => "/"}
+        %span.purple
+          {re
+        %span.white
+          programa
+        %span.purple
+          }
+
+    #navbar-collapsed.collapse.navbar-collapse.uppercase
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#about"} Reprograma
+        %li
+          %a{:href => "#aboutCourse"} Curso
+        %li
+          %a{:href => "#subscriptions"} Inscrições
+        %li
+          %a{:href => "#team"} Equipe
+        %li
+          %a{:href => "#partners"} Parceiros
+        %li
+          %a{:href => "#support"}
+            %button.btn.btn-md.btn-primary.uppercase Quero Apoiar
+
+%section.container-fluid.background-header.main-header.parallax
+  .row.text-center
+    .col-md-6.col-md-offset-3
+      .header-container
+        %a.navbar-brand.reprograma-logo.lg{:href => "/"}
+          %span.purple
+            {re
+          %span.white
+            programa
+          %span.purple
+            }
+
+        %p.caption
+          %strong reprogramando
+          a forma como
+          %strong mulheres jovens
+          %br
+          se percebem como cintribuidoras
+          %br
+          %strong do setor de tecnologia
+
+        %a.btn.btn-lg.btn-outline.uppercase{href: "#"} Cadastre-se para as próxmas edições
+
+%section#about.container.about.fade-in-element
+  .row.text-center
+    .col-md-8.col-md-offset-2
+      %h3.section-title.uppercase O que é o reprograma?
+      %p.description
+        Queremos inspirar, empoderar e educar mulheres jovens, através de conhecimentos de computação e ferramentas de capacitação profissional.
+        %br
+        Ao final do programa, elas possam contribuir da melhor maneira para o setor tecnológico brasileiro, conquistando assim maiores possibilidades para acessar oportunidades profissionais nesse setor.
+
+#callToAction.container-fluid.call-to-action.fade-in-element
+  .row.text-center
+    .col-md-3.box
+      %p.uppercase Um crescimento rápido e elevado da área de TI
+    .col-md-3.box
+      %p.uppercase Demanda por desenvolvedores não está sendo suprida
+    .col-md-3.box
+      %p.uppercase A quantidade de mulheres na área de TI ainda é muito pequena
+    .col-md-3.box
+      %p.uppercase As soluçoes desenvolvidas não dão conta da diversidade local
+
+%section#aboutCourse.container-fluid.about-course
+  .row.text-center
+    .col-md-12
+      %h3.section-title.uppercase O curso
+      %p Intensivo de 6 semanas para capacitar jovens mulheres
+
+  .row.text-center.goals
+    .col-md-4.goal
+      = image_tag "icons/goal1.png"
+      %p Capacitar mulheres jovens em programação front-end
+    .col-md-4.goal
+      = image_tag "icons/goal2.png"
+      %p Conhecimentos básicos de empreendedorismo e apoio profissional
+    .col-md-4.goal
+      = image_tag "icons/goal3.png"
+      %p Mentoria liderada por profissionais referência na indústria
+
+%section#subscriptions.container.subscriptions
+  .row.text-center
+    .col-md-12
+      %h3.section-title.uppercase Inscrições
+      %p As inscrições estão encerradas para essa etapa :(
+      %p cadastre-se e não perca as próximas edições!
+      %a.btn.btn-lg.btn-primary{href: "#"} Cadastrar
+
+%section#team.container-fluid.team
+  .row.text-center
+    .col-md-12
+      %h3.section-title.uppercase Equipe Reprograma
+
+  .row.text-center
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/adelle.png", alt: "Perfil: Adelle Araujo"
+          %figcaption
+            %strong Adelle Araújo
+            %br
+            UX Designer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/ana.png", alt: "Perfil: Ana Marysa"
+          %figcaption
+            %strong Ana Marysa
+            %br
+            UX Designer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/anna.png", alt: "Perfil: Anna Flávia"
+          %figcaption
+            %strong Anna Flávia
+            %br
+            Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/camila.png", alt: "Perfil: Camila Achutti"
+          %figcaption
+            %strong Camila Achutti
+            %br
+            Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/carla.png", alt: "Perfil: Carla de Bona"
+          %figcaption
+            %strong Carla de Bona
+            %br
+            UX/UI Designer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/isabelle.png", alt: "Perfil: Isabelle"
+          %figcaption
+            %strong Isabelle Galvão
+            %br
+            UX/UI Designer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/juliana.png", alt: "Perfil: Juliana"
+          %figcaption
+            %strong Juliana Damarque
+            %br
+            Monitora/Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/mariel.png", alt: "Perfil: Mariel Reyes Milk"
+          %figcaption
+            %strong Mariel Reyes Milk
+            %br
+            Fundadora e Diretora
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/mateus.png", alt: "Perfil: Mateus Souza"
+          %figcaption
+            %strong Mateus Chagas
+            %br
+            Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/otavio.png", alt: "Perfil: Otavio"
+          %figcaption
+            %strong Otavio Ferreira
+            %br
+            Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/paulo.png", alt: "Perfil: Paulo"
+          %figcaption
+            %strong Paulo Silveira
+            %br
+            Developer
+    .col-md-2
+      %a.thumbnail{href: "", target: "_blank"}
+        %figcaption
+          = image_tag "team/samantha.png", alt: "Perfil: Samantha"
+          %figcaption
+            %strong Samantha Lopes
+            %br
+            Developer
+
+%section#partners.container.partners
+  .row.text-center
+    .col-md-12
+      %h3.section-title.uppercase Conheça nossos parceiros
+
+  .row.text-center.logos
+    .col-md-12
+      %a.partner{href: "https://www.nubank.com.br/", target: "_blank", title: "Nubank"}
+        = image_tag "partners/nubank.png", alt: "Logo Nubank"
+      %a.partner{href: "http://minasprogramam.com/", target: "_blank", title: "Minas Programam"}
+        = image_tag "partners/minas.png", alt: "Logo Minas Programam"
+      %a.partner{href: "http://www.vivareal.com.br", target: "_blank", title: "Viva Real"}
+        = image_tag "partners/vivareal.png", alt: "Logo Viva Real"
+      %a.partner{href: "http://ymee.us/", target: "_blank", title: "Ymee"}
+        = image_tag "partners/ymee.png", alt: "Logo Ymee"
+
+  .row.text-center
+    .col-md-12
+      %a.btn.btn-md.btn-primary.uppercase{href: "#", title: "Seja nosso parceiro"} Seja nosso parceiro
+
+%section#support.container-fluid.support
+  .row.text-center
+    .col-md-12
+      %strong Apoie o projeto e ajude o desenvolvimento profissional de mulheres
+      %span
+        %a.btn.btn-md.btn-inverse.uppercase{href: "https://www.catarse.me/reprograma", target: "_blank", title: "Faça uma doação pelo Catarse"} Quero apoiar
+
+.container-fluid.sub-support
+  .row.text-center
+    .col-md-12
+      %p
+        %span.glyphicon.glyphicon-heart
+        Obrigado por você e as empresas que já nos apoiam!
+        %span.glyphicon.glyphicon-heart
+
+.container-fluid.footer
+  .row
+    .col-md-8.col-md-offset-2
+      .row
+        .col-md-6
+          %p.uppercase
+            %span.glyphicon.glyphicon-envelope
+            info@reprograma.com.br
+        .col-md-6
+          %p.uppercase.pull-right
+            fb.reprograma/reprogramabrasil
