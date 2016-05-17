@@ -164,6 +164,8 @@ section
 .footer
   background-color: #111111
   color: #FFF
+  .facebook
+    color: #FFF
   .glyphicon-evelope
     font-size: 4rem
     color: $primary-color
@@ -195,3 +197,19 @@ section
 
 .hideme
   opacity: 0
+
+// Media Queries
+@media (max-width: $screen-xs-max)
+  .hideme
+    opacity: 1
+
+  // Call To Action Section
+  .call-to-action
+    .box
+      background: linear-gradient(to bottom, #9351b4 0%, #7a4395 100%)
+
+  // About Course Section
+  .about-course
+    .goals
+      .goal
+        margin-bottom: 8rem

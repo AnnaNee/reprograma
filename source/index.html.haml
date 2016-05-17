@@ -1,4 +1,4 @@
-#intro.text-center
+#intro.text-center.hidden-xs
   %span#leftKey {
   %span#rightKey }
   #typed
@@ -32,7 +32,7 @@
         %li
           %a{:href => "#partners"} Parceiros
         %li
-          %a{:href => "#support"}
+          %a{:href => "https://www.catarse.me/reprograma", target: "_blank"}
             %button.btn.btn-md.btn-primary.uppercase Quero Apoiar
 
 %section.container-fluid.background-header.main-header.parallax
@@ -52,11 +52,11 @@
           a forma como
           %strong mulheres jovens
           %br
-          se percebem como cintribuidoras
+          se percebem como contribuidoras
           %br
-          %strong do setor de tecnologia
+          %strong no setor de tecnologia
 
-        %a.btn.btn-lg.btn-outline.uppercase{href: "#"} Cadastre-se para as próxmas edições
+        %a.btn.btn-lg.btn-outline.uppercase.responsive{href: "#"} Cadastre-se para as próximas edições
 
 %section#about.container.about.hideme
   .row.text-center
@@ -101,7 +101,7 @@
       %h3.section-title.uppercase Inscrições
       %p As inscrições estão encerradas para essa etapa :(
       %p cadastre-se e não perca as próximas edições!
-      %a.btn.btn-lg.btn-primary{href: "#"} Cadastrar
+      %a.btn.btn-lg.btn-primary.uppercase{href: "#"} Cadastrar
 
 %section#team.container-fluid.team
   .row.text-center
@@ -109,7 +109,7 @@
       %h3.section-title.uppercase Equipe Reprograma
 
   .row.text-center.hideme
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/adelle.png", alt: "Perfil: Adelle Araujo"
@@ -117,7 +117,7 @@
             %strong Adelle Araújo
             %br
             UX Designer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/ana.png", alt: "Perfil: Ana Marysa"
@@ -125,7 +125,7 @@
             %strong Ana Marysa
             %br
             UX Designer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/anna.png", alt: "Perfil: Anna Flávia"
@@ -133,7 +133,7 @@
             %strong Anna Flávia
             %br
             Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/camila.png", alt: "Perfil: Camila Achutti"
@@ -141,7 +141,7 @@
             %strong Camila Achutti
             %br
             Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/carla.png", alt: "Perfil: Carla de Bona"
@@ -149,7 +149,7 @@
             %strong Carla de Bona
             %br
             UX/UI Designer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/isabelle.png", alt: "Perfil: Isabelle"
@@ -159,7 +159,7 @@
             UX/UI Designer
 
   .row.text-center.hideme
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/juliana.png", alt: "Perfil: Juliana"
@@ -167,7 +167,7 @@
             %strong Juliana Damarque
             %br
             Monitora/Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/mariel.png", alt: "Perfil: Mariel Reyes Milk"
@@ -175,7 +175,7 @@
             %strong Mariel Reyes Milk
             %br
             Fundadora e Diretora
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/mateus.png", alt: "Perfil: Mateus Souza"
@@ -183,7 +183,7 @@
             %strong Mateus Chagas
             %br
             Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/otavio.png", alt: "Perfil: Otavio"
@@ -191,7 +191,7 @@
             %strong Otavio Ferreira
             %br
             Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
           = image_tag "team/paulo.png", alt: "Perfil: Paulo"
@@ -199,7 +199,7 @@
             %strong Paulo Silveira
             %br
             Developer
-    .col-md-2
+    .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figcaption
           = image_tag "team/samantha.png", alt: "Perfil: Samantha"
@@ -226,7 +226,7 @@
 
   .row.text-center
     .col-md-12
-      %a.btn.btn-md.btn-primary.uppercase{href: "#", title: "Seja nosso parceiro"} Seja nosso parceiro
+      %a.btn.btn-md.btn-primary.uppercase{href: "mailto:info@reprograma.com.br?subject=Quero ser parceiro do Reprograma", title: "Seja nosso parceiro"} Quero ser parceiro
 
 %section#support.container-fluid.support
   .row.text-center
@@ -252,5 +252,5 @@
             %span.glyphicon.glyphicon-envelope
             info@reprograma.com.br
         .col-md-6
-          %p.uppercase.pull-right
+          %a.uppercase.pull-right.facebook{href: "https://www.facebook.com/ReprogramaBrasil/?fref=ts", title: "Curta a Reprograma no Facebook", target: "_blank"}
             fb.reprograma/reprogramabrasil

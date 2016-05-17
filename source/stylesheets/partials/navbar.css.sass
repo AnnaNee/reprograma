@@ -67,5 +67,22 @@
 
 @media (max-width: $screen-xs-max)
   .navbar-reprograma
+    &.navbar-scrolled
+      .navbar-toggle
+        border-color: $primary-color
+        .icon-bar
+          background-color: $primary-color
+
+    .main-header,
+    .background-header
+      .header-container
+        margin-top: 0
+
+        .reprograma-logo.lg
+          font-size: 5rem
+
+        .responsive
+          font-size: 1.4rem
+
     .navbar-collapse
       background-color: $primary-color
