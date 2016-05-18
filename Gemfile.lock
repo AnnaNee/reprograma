@@ -97,6 +97,11 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
+    middleman-google-analytics (2.1.1)
+      activesupport (~> 4.1)
+      erubis
+      middleman-core (>= 3.4)
+      uglifier (>= 2.5, < 4.0)
     middleman-livereload (3.4.6)
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
@@ -168,6 +173,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.6)
   middleman (>= 4.0.0)
   middleman-deploy (~> 2.0.0.pre.alpha)
+  middleman-google-analytics (~> 2.1)
   middleman-livereload
   sass-rails (>= 3.2)
   tzinfo-data
