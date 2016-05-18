@@ -34,7 +34,7 @@ $(function()
 
           setTimeout(function() {
               $leftKey.animate({"left": "0", "opacity":1}, "slow");
-              $rightKey.animate({"left": "-=300px", "opacity":1}, "slow");
+              $rightKey.animate({"right": "0", "opacity":1}, "slow");
               removeAnimationFrame();
           }, 4500);
       }
