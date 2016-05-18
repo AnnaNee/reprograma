@@ -21,10 +21,10 @@
       background-color: #FFF
 
   &.navbar-scrolled
-    background-color: #FFF
+    background-color: darken($primary-color, 20%)
     @include transition(all 0.3s ease-in-out)
     li a
-      color: $primary-color
+      color: #FFF
 
     .reprograma-logo
       .light-purple
@@ -73,16 +73,19 @@
         .icon-bar
           background-color: $primary-color
 
-    .main-header,
-    .background-header
+    .main-header
       .header-container
         margin-top: 0
 
-        .reprograma-logo.lg
-          font-size: 5rem
-
-        .responsive
-          font-size: 1.4rem
+  .responsive
+    font-size: 1.4rem
 
     .navbar-collapse
       background-color: $primary-color
+
+  .partners
+    .partner
+      display: block
+      margin-bottom: 5rem
+      margin-right: 0
+      width: 100%
