@@ -11,13 +11,8 @@
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand.reprograma-logo{:href => "/"}
-        %span.purple
-          {re
-        %span.white
-          programa
-        %span.purple
-          }
+      %a.navbar-brand.logo-xs{:href => "/"}
+        = image_tag "header/logo-reprograma.png", alt: "Logo Reprograma"
 
     #navbar-collapsed.collapse.navbar-collapse.uppercase
       %ul.nav.navbar-nav.navbar-right
@@ -39,13 +34,8 @@
   .row.text-center
     .col-md-6.col-md-offset-3
       .header-container
-        %a.navbar-brand.reprograma-logo.lg{:href => "/"}
-          %span.purple
-            {re
-          %span.white
-            programa
-          %span.purple
-            }
+        %a.text-center{:href => "/"}
+          = image_tag "header/logo-reprograma.png", alt: "Logo Reprograma", class:"img-responsive"
 
         %p.caption
           %strong reprogramando
