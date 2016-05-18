@@ -90,7 +90,7 @@
     .col-md-12
       %h3.section-title.uppercase Inscrições
       %p As inscrições estão encerradas para essa etapa :(
-      %p cadastre-se e não perca as próximas edições!
+      %p Cadastre-se e não perca as próximas edições!
       %a.btn.btn-lg.btn-primary.uppercase{href: "#"} Cadastrar
 
 %section#team.container-fluid.team
@@ -106,7 +106,7 @@
           %figcaption
             %strong Adelle Araújo
             %br
-            UX Designer
+            Professora | UX Designer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -122,7 +122,7 @@
           %figcaption
             %strong Anna Flávia
             %br
-            Developer
+            Professora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -130,7 +130,7 @@
           %figcaption
             %strong Camila Achutti
             %br
-            Developer
+            Colaboradora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -138,7 +138,7 @@
           %figcaption
             %strong Carla de Bona
             %br
-            UX/UI Designer
+            Professora | UX/UI Designer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -146,7 +146,7 @@
           %figcaption
             %strong Isabelle Galvão
             %br
-            UX/UI Designer
+            Monitora | UX/UI Designer
 
   .row.text-center.hideme
     .col-md-2.col-xs-6
@@ -156,7 +156,7 @@
           %figcaption
             %strong Juliana Damarque
             %br
-            Monitora/Developer
+            Monitora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -164,7 +164,7 @@
           %figcaption
             %strong Mariel Reyes Milk
             %br
-            Fundadora e Diretora
+            Professora | Fundadora e Diretora
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -172,7 +172,7 @@
           %figcaption
             %strong Mateus Chagas
             %br
-            Developer
+            Professora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -180,7 +180,7 @@
           %figcaption
             %strong Otavio Ferreira
             %br
-            Developer
+            Colaboradora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -188,7 +188,7 @@
           %figcaption
             %strong Paulo Silveira
             %br
-            Developer
+            Professora | Developer
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figcaption
@@ -196,7 +196,17 @@
           %figcaption
             %strong Samantha Lopes
             %br
-            Developer
+            Monitora | Developer
+
+  .row
+    .col-md-2.col-xs-6
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
+          = image_tag "team/fernanda.png", alt: "Perfil: Fernanda Faria"
+          %figcaption
+            %strong Fernanda Faria
+            %br
+            Colaboradora | Designer
 
 %section#partners.container.partners.hideme
   .row.text-center
@@ -229,19 +239,20 @@
   .row.text-center
     .col-md-12
       %p
-        %span.glyphicon.glyphicon-heart
+        %span &hearts;
         Obrigado por você e as empresas que já nos apoiam!
-        %span.glyphicon.glyphicon-heart
+        %span &hearts;
 
-%footer.container-fluid.footer
-  .row
+%footer.container-fluid
+  .row.footer
     .col-md-8.col-md-offset-2
       .row
         .col-md-6
           %p.uppercase
-            %span.glyphicon.glyphicon-envelope
-            info@reprograma.com.br
+            %i= image_tag "icons/icon-mail.png"
+            %span.icon-content info@reprograma.com.br
         .col-md-6
           %a.uppercase.pull-right.facebook{href: "https://www.facebook.com/ReprogramaBrasil/?fref=ts", title: "Curta a Reprograma no Facebook", target: "_blank"}
-            fb.reprograma/reprogramabrasil
+            %i= image_tag "icons/icon-fb.png", alt: "Facebook Logo"
+            %span.icon-content fb.reprograma/reprogramabrasil
   = google_analytics_tag
