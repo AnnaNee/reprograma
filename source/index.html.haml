@@ -87,11 +87,17 @@
 
 %section#subscriptions.container.subscriptions.hideme
   .row.text-center
-    .col-md-12
+    .col-md-4.col-md-offset-4
       %h3.section-title.uppercase Inscrições
       %p As inscrições estão encerradas para essa etapa :(
       %p Cadastre-se e não perca as próximas edições!
-      %a.btn.btn-lg.btn-primary.uppercase{href: "#"} Cadastrar
+
+      %form{action: "//reprograma.us13.list-manage.com/subscribe/post?u=5a6287ae3c3b2d9b0cab6c564&id=3b24181b92", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+        .form-group
+          %input.form-control.mail{name: "EMAIL", placeholder: "Digite seu email", required: "", type: "email", value: ""}
+          %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+            %input.form-control{name: "b_5a6287ae3c3b2d9b0cab6c564_3b24181b92", tabindex: "-1", type: "text", value: ""}
+          %input.btn.btn-lg.btn-primary.uppercase{name: "subscribe", type: "submit", value: "Cadastrar"}
 
 %section#team.container-fluid.team
   .row.text-center
