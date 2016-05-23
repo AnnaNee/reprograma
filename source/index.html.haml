@@ -46,16 +46,16 @@
           %br
           %strong no setor de tecnologia
 
-        %a.btn.btn-lg.btn-outline.uppercase.responsive{href: "#"} Cadastre-se para as próximas edições
+        %a.btn.btn-lg.btn-outline.uppercase.responsive{href: "#subscriptions"} Cadastre-se para as próximas edições
 
 %section#about.container.about.hideme
   .row.text-center
     .col-md-8.col-md-offset-2
       %h3.section-title.uppercase O que é o reprograma?
       %p.description
-        Queremos inspirar, empoderar e educar mulheres jovens, através de conhecimentos de computação e ferramentas de capacitação profissional.
+        Queremos inspirar, empoderar e educar mulheres jovens, por meio de conhecimentos de computação e ferramentas de capacitação profissional.
         %br
-        Ao final do programa, elas possam contribuir da melhor maneira para o setor tecnológico brasileiro, conquistando assim maiores possibilidades para acessar oportunidades profissionais nesse setor.
+        É o nosso desejo que, ao final do programa, nossas alunas possam contribuir da melhor maneira para o setor tecnológico brasileiro, conquistando assim maiores possibilidades para acessar oportunidades profissionais nesse setor.
 
 #callToAction.container-fluid.call-to-action.fade-in-element.hideme
   .row.text-center
@@ -89,7 +89,7 @@
   .row.text-center
     .col-md-4.col-md-offset-4
       %h3.section-title.uppercase Inscrições
-      %p As inscrições estão encerradas para essa etapa :(
+      %p As inscrições estão encerradas para esta etapa :(
       %p Cadastre-se e não perca as próximas edições!
 
       %form{action: "//reprograma.us13.list-manage.com/subscribe/post?u=5a6287ae3c3b2d9b0cab6c564&id=3b24181b92", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
@@ -120,7 +120,7 @@
           %figcaption
             %strong Ana Marysa
             %br
-            UX Designer
+            UX Designer | Professora
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -148,13 +148,22 @@
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
+          = image_tag "team/fernanda.jpg", alt: "Perfil: Fernanda Faria"
+          %figcaption
+            %strong Fernanda Faria
+            %br
+            Colaboradora | Comunicação
+
+  .row.text-center.hideme
+    .col-md-2.col-xs-6
+      %a.thumbnail{href: "", target: "_blank"}
+        %figure
           = image_tag "team/isabelle.png", alt: "Perfil: Isabelle"
           %figcaption
             %strong Isabelle Galvão
             %br
             Monitora | UX/UI Designer
 
-  .row.text-center.hideme
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figure
@@ -195,6 +204,8 @@
             %strong Paulo Silveira
             %br
             Professora | Developer
+
+  .row.text-center
     .col-md-2.col-xs-6
       %a.thumbnail{href: "", target: "_blank"}
         %figcaption
@@ -203,16 +214,6 @@
             %strong Samantha Lopes
             %br
             Monitora | Developer
-
-  .row
-    .col-md-2.col-xs-6
-      %a.thumbnail{href: "", target: "_blank"}
-        %figure
-          = image_tag "team/fernanda.jpg", alt: "Perfil: Fernanda Faria"
-          %figcaption
-            %strong Fernanda Faria
-            %br
-            Colaboradora | Designer
 
 %section#partners.container.partners.hideme
   .row.text-center
@@ -246,7 +247,7 @@
     .col-md-12
       %p
         %span &hearts;
-        Obrigado por você e as empresas que já nos apoiam!
+        A todas as pessoas e empresas que nos apoiam, o nosso muito obrigado!
         %span &hearts;
 
 %footer.container-fluid
